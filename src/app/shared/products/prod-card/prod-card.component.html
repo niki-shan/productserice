@@ -1,0 +1,22 @@
+
+<mat-card  class="bg-primary text-white mb-3 text-uppercase">
+    <mat-card-title  class=" py-3">
+      {{productobj.Pname}}
+    </mat-card-title>
+   
+    <mat-card-content>
+             This is {{productobj.Pdetail}} & its status {{productobj.Pstatus}}
+    </mat-card-content>
+    
+    <mat-card-actions>
+      <button mat-button   (click)="onPrograse()">
+         In prograse
+      </button>
+      <button mat-button color="primary" (click)="onDispatch()">Dispatched</button>
+      <button mat-button color="accent" (click)="onDelivered()">Delivered</button>
+
+    </mat-card-actions>
+  </mat-card>
+
+
+  
